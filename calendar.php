@@ -31,14 +31,14 @@ function foo($arg_1)
         <li>Sa</li>
         <li>Su</li>
     </ul>
-    END;
+END;
 
-    <ul class="days">
+    echo '<ul class="days">'
         for ($i = 0; $i < 35; $i++) 
         {
             echo "<li>$i</li>";
         }
-    </ul>
+    echo '</ul>'
         
     }
 
