@@ -11,7 +11,11 @@
 |
 */
 
+use Illuminate\Support\Facades\DB;
+
 Route::get('/', function () {
+    $count = DB::table('users')->count();
+    dump(['HELLO', 11, $count]);
 //phpinfo();
 //exit();
     return view('welcome');
